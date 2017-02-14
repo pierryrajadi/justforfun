@@ -1,5 +1,5 @@
 
-import java.util.Random;
+import java.util.Random; 
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,12 +10,12 @@ import java.util.Random;
  *
  * @author COMPUTER
  */
-public class FrmJustForFun extends javax.swing.JFrame {
+public class FrmValentineJoke extends javax.swing.JFrame {
 
     /**
      * Creates new form FrmJustForFun
      */
-    public FrmJustForFun() {
+    public FrmValentineJoke() {
         initComponents();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -23,7 +23,7 @@ public class FrmJustForFun extends javax.swing.JFrame {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowevent) {
                 for (int i = 1; i <= 10; i++) {
-                    FrmJustForFun forpopup = new FrmJustForFun();
+                    FrmValentineJoke forpopup = new FrmValentineJoke();
                     Random random = new Random();
                     forpopup.setLocation(random.nextInt(1000), random.nextInt(500));
                     forpopup.setVisible(true);
@@ -118,7 +118,7 @@ public class FrmJustForFun extends javax.swing.JFrame {
     private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
         // TODO add your handling code here:
         for (int i = 1; i <= 10; i++) {
-            FrmJustForFun forpopup = new FrmJustForFun();
+            FrmValentineJoke forpopup = new FrmValentineJoke();
             Random random = new Random();
             forpopup.setLocation(random.nextInt(1000), random.nextInt(500));
             forpopup.setVisible(true);
@@ -148,20 +148,21 @@ public class FrmJustForFun extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmJustForFun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmJustForFun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmJustForFun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmJustForFun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmValentineJoke.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmJustForFun().setVisible(true);
+                new FrmValentineJoke().setVisible(true);
             }
         });
     }
